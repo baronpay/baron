@@ -284,3 +284,9 @@ var newInvoice = {
 
 ### Webhook Verification
 The app notified by the webhook can trust the incoming payment notification because it contains a matching webhook `token` that was set when the Invoice was created. Further information about the Invoice can optionally be queried from Baron via the `/api/invoices/:invoiceId` route.  For example, the Invoice can be verified as paid if `is_paid` is `true`.  Note that this intra-app communication can be at risk if transmitted unencrypted over the Internet.
+
+## Credits
+* Anthony Kinsey, Slickage
+* Warren Togami
+* Bug Fixes
+  * SomeoneWeird, ken restivo, Adam Brady, Karl-Johan Alm
